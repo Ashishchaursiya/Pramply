@@ -1,0 +1,682 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+/* global.css */
+ 
+
+/* Other global styles */
+
+.navwidth{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.796);
+   }
+   /* Add red border for invalid form fields */
+.is-invalid {
+    border: 1px solid #f699a2 !important;
+  }
+  .footertext{
+    position: relative;
+    left: 40px;
+    bottom: 86px;
+  }
+  /* css for spiiner*/
+ /* Absolute Center Spinner */
+.loading {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+}
+ 
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+ 
+
+ 
+ 
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: -0.5em;
+
+  border: 3px solid rgba(33, 150, 243, 1.0);
+  border-radius: 100%;
+  border-bottom-color: transparent;
+  -webkit-animation: spinner 1s linear 0s infinite;
+  animation: spinner 1s linear 0s infinite;
+
+
+}
+/* hide unneccessory content */
+ 
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+ 
+.loginsocialSection{
+  border: 2px solid    #b8b8b8;
+  padding:5px 5px 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.googleLoginSection{
+  padding-left: 0px;
+}
+.loginsocialSection span{ 
+  font-weight: 500 !important;
+}
+.dividerLine{
+  display:inline-block;
+  width:45%;
+  background-color:   #d4d4d4;  
+  height: 1.5px;
+  margin-bottom: 4px;
+
+}
+.despLogo{
+  width: 55px;
+  height: 62px;
+}
+.orText{
+  color:   #dad8d7 !important;  
+  font-size: 12px !important;
+  font-weight: 400;
+  margin: 1px 4px;
+
+}
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to 100% of the viewport height to center it vertically */
+}
+/* Add this CSS to your stylesheet or style section */
+.dropdown-toggle::after {
+  display: none !important;
+}
+.btn-check:focus+.btn, .btn:focus{
+  box-shadow: none !important;
+}
+.userAvatarBtn{
+  padding: 0 !important;
+}
+.rounded-image {
+  border-radius: 50%;  
+  width: 100px;  
+  height: 100px;  
+  overflow: hidden;  
+}
+ .bi:hover{
+cursor: pointer;
+}
+.addHover:hover{
+  cursor: pointer;
+}
+label{
+  color:#000000 !important;
+  font-weight: 500 !important;
+}
+
+.practiceSection div img{
+  width: 120px;
+  height: 120px;
+}
+.practiceSection{
+ background-color: #d4d4d4 ;
+ z-index: 1;
+ position: relative;
+ margin-top: 1.5rem;
+}
+.practiceSection .imgContainer{
+  /* background-color: #b6d8ff; */
+  padding: 30px;
+  border-radius: 10px;
+  width: 235px;
+  height: 205px;
+  
+ }
+
+ .mainContainer{
+  text-align: -webkit-center;
+
+ }
+ 
+ .practiceSection div :hover{
+ cursor: pointer;
+ 
+ 
+}
+.navbarContent{
+ display: flex;
+}
+ .peerNotAvailable{
+  width:80%;
+   
+  display:inline-block;
+  margin:auto
+ }
+ .peerAvailable{
+  width:800px;
+ 
+  display:inline-block;
+  margin:auto
+ }
+ /* styles.css */
+.peerNotAvailable + #remoteVideo {
+  width: 1px;
+  display: inline-block;
+  
+}
+
+.peerAvailable + #remoteVideo {
+  width: 800px;
+  display: inline-block;
+ 
+}
+video{
+  height: 70Vh;
+}
+.videoActionSection .bi{
+  font-size: 27px !important;
+}
+.video-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+ 
+.paymentIntro:after {
+  content: " PRAMPLY";
+  color: #004aad;
+  font-size:larger;
+  font-weight: 800;
+ 
+}
+.paymentH2{
+  color: #f48c13 !important;
+}
+.paymentinfoContainer{
+  padding: 15px 10px;
+  width: 200px;
+  height: 250px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.paymentinfoContainer p,.paymentinfoBestDealContainer p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.paymentinfoBestDealContainer{
+  padding: 15px 10px;
+  width: 220px;
+  height: 300px;
+  background-color: #f48c13;
+  border-radius: 10px;
+  top:36px
+}
+.subSciptionBtn{
+  background-color: #f48c13 !important;
+  color: #ffffff !important
+}
+.nonSubSciptionBtn{
+  background-color: #737373 !important;
+  color: #ffffff !important
+}
+.subscription li span{
+  font-weight: normal !important;
+}
+.subscription {
+ width: 50% !important;
+}
+
+.footerHr {
+  width: 60px;
+  background-color: #7c4dff;
+  height: 2px;
+}
+
+.footerMain {
+  background-color: #07377b;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footerMain .footerLogo{
+  width: 10rem;
+}
+.footerMain .copyrightFooter{
+  width: 17px;
+}
+
+.footerMain .SocialLogo{
+  width: 25px;
+
+}
+.footerMain .YoutubeLogo{
+  height: 31px;
+  width: 26px;
+
+}
+.linksfooter{
+  text-align-last: right;
+
+}
+.linksfooter p{
+  margin-bottom: 0.7rem !important;
+}
+.footerLasthr{
+  height: 3px;
+  margin: 0;
+  color: #f4f4f4;
+}
+.feedbackMain{
+  width: 50%;
+  padding-bottom: 1rem;
+}
+.number:hover{
+  background-color:#b8b8b8;
+}
+ .number:first-child {
+  margin-left:  1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.number:last-child {
+  margin-right:  1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.subscriptionShadow{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.ProfileText{
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .subscription{
+    width: 100% !important;
+    box-shadow: none !important;
+  }
+  .ProfileImg{
+    display: none;
+  }
+  .ProfileText{
+    display: block;
+  }
+  
+}
+.priceMark{
+  font-size: 20px;
+  
+}
+.currencySize{
+  font-size: 40px !important;
+}
+.practiceSection{
+  height: auto !important;
+}
+.settingSec{
+  width: 40rem !important;
+}
+@media screen and (max-width: 800px) {
+  .settingSec{
+      width: 30rem !important;
+  }
+  
+}
+/*FullPageLoader.css */
+
+ /* FullPageLoader.css */
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.loader-container {
+  margin-bottom: 20px;
+}
+
+.fullpageloader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 18px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page_skewDiv__Hdcn5:after{
+    transform: none !important;
+  }
+  .page_skewDiv__Hdcn5{
+    width: 100% !important;
+  }
+  .page_homeImg__l4Pjr{
+    margin-left: 20px !important;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .page_skewDiv__Hdcn5{
+    height: auto !important;
+  }
+  .page_padleft__3tnwt{
+    height: auto !important;
+  }
+  .skewDivMain{
+    display: block !important;
+  }
+  .navbarContent{
+    display: grid;
+  }
+  .navbarContent .bi-bell{
+    display: none;
+  }
+  .navbarContent .alertB{
+    display: none;
+  }
+}
+.mainNumber{
+  display: flex;
+  width: 100%;
+}
+.badExcellent{
+  display: flex;
+}
+.feedbackMain{
+  margin-top: 3rem !important;
+}
+.mobileSubscription{
+  display: none !important;
+}
+.successWidth{
+  width: 50% !important;
+}
+@media screen and (max-width: 500px) {
+  .footerMainSectionOne {
+    place-content: center;
+  
+  }
+  .settingSec{
+    width: auto !important;
+}
+  .practiceSection{
+    
+    margin-top: 0;
+   }
+  .googleLoginSection{
+    padding-left: 0px;
+  }
+  .loginsocialSection{
+  text-align: center;
+}
+  .successWidth{
+    width: 100% !important;
+  }
+  .notBestMain{
+    width: 45%;
+    margin: 10px;
+  }
+  .dividerLine{
+    width:43%;
+   
+  
+  }
+  .webSubscription{
+    display: none;
+  }
+  .mobileSubscription{
+    display: block !important;
+  }
+  .paymentinfoContainer {
+    padding: 15px 10px;
+    width: 100% !important;
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+.paymentinfoBestDealContainerMain{
+  text-align: -webkit-center;
+
+}
+.paymentinfoBestDealContainer{
+  height: 275px;
+  width: 50%;
+}
+  .timePrevious{
+    display: none !important;
+  }
+  .despLogo{
+    width: 55px;
+    height: 48px;
+  }
+  .headMobHide{
+    display: none;
+  }
+  .linksfooter{
+    text-align-last: center;
+  
+  }
+  .footertext{
+    position: relative;
+    left: 0px;
+    bottom: 50px;
+  }
+  .feedbackMain{
+    width: 100%;
+  }
+  .practiceImagesBox{
+    flex: 0 0 auto !important;
+    width: 50% !important;
+  }
+  .practiceSection div img {
+    width: 70px;
+    height: 70px;
+
+}
+.practiceSection .imgContainer {
+  padding: 14px;
+  width: 166px;
+  height: 205px;
+}
+/* .mainNumber{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2rem;
+} */
+/* .number:first-child {
+  margin-left:  0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.number:last-child {
+  margin-right:  0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.badExcellent{
+  display: none;
+} */
+.feedbackMain{
+  margin-top: 9rem !important;
+}
+}
+.header {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2681ff;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+.section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+ 
+@media (max-width: 700px) {
+  .communicationMobView{
+  display: none !important;
+   }
+}
+ 
+.passwordField:focus{
+  box-shadow: none !important;
+  border-color: #ced4da white #ced4da #ced4da!important;
+}
+input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+.webBottomFooter{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+    }
+.expandContent{
+    min-height: calc(72vh - 100px)
+   }  

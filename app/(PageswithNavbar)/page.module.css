@@ -1,0 +1,155 @@
+  
+.homeLink{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size:larger;
+  padding-top: 5px;
+}
+.skewDiv {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  padding: 10px 20px 10px 0px;
+  font-size: 20px;
+  position: relative;
+  color: #FFF;
+  background:  #b6d8ff;
+display:inline-block;
+}
+.skewDiv:after {
+  content: " ";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background:  #b6d8ff;
+  transform-origin: bottom left;
+  -ms-transform: skew(-30deg, 0deg);
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-15deg, 0deg);
+}
+ .fw10{
+  font-weight: 600 !important;
+  font-size:larger !important;
+ }
+ .homeImg{
+  margin: 53px 68px 5px 200px;
+}
+ .hometext{
+  margin: 180px 5px 20px 90px;
+ }
+  
+ .padleft{
+  padding-left: 0px !important;
+ 
+  height: 90vh !important;
+ }
+
+ .homeintro:after {
+  content: " PRAMPLY";
+  color: #004aad;
+  font-size:larger;
+  font-weight: 800;
+ 
+}
+.homeintro{
+  font-weight: bold !important;
+  font-size: 30px !important;
+}
+.homepara{
+  font-size: 19px !important;
+}
+.practicebtn{
+  background-color: #2681ff !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+}
+/* Mobile */
+@media (max-width: 700px) {
+  .fw10{
+    font-weight: 400 !important;
+   }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .fw10{
+    font-weight: 700 !important;
+   }
+}
+.circlecontainer {
+  position: relative;
+}
+
+.circle {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.centerimage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerimage img {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  .skewDiv{
+    height: auto !important;
+  }
+  .skewCol{
+    padding-right: 0 !important;
+  }
+  .padleft{
+    height: auto !important;
+  }
+  .skewDivMain{
+    display: block !important;
+  }
+  .companyLogoDiv{
+    text-align-last: center;
+  }
+  .homeImg{
+    margin-top: 20px;
+  }
+}
+.companyLogoDiv{
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .companyLogoDiv{
+    margin-bottom: 0;
+  }
+  .homeImg{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+  .hometext{
+    margin: 80px 5px 80px 90px;
+   }
+  
+}
+
+

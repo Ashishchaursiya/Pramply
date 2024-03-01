@@ -1,0 +1,42 @@
+.mainDivChooseQues{
+    width: 35% ;
+}
+.mainContainerChooseQues{
+    display: flex;
+}
+.startPrcDiv{
+    padding: 30px;
+    background-color: #2681ff !important;
+    color: #ffffff;
+}
+.onlineDiv{
+    background-color: #ebebeb !important;
+    height: 20%;
+    padding:  20px 30px;
+}
+.mobOnline{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainDivChooseQues{
+        width: 30rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .mainDivChooseQues{
+        width: 100%;
+    }
+    .mainContainerChooseQues{
+        display: block;
+    }
+    .webOnline{
+        display: none;
+    }
+    .mobOnline{
+        display: block;
+    }
+}
+/* Mobile */
+ 

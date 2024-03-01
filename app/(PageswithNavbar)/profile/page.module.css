@@ -1,0 +1,73 @@
+.imgSection{
+  position: relative;
+}
+.editIcon{
+  position: absolute;
+  top:30px;
+  left:45px
+}
+.editIcon{
+  display: none;
+}
+.imgSection:hover .editIcon{
+  display: inline;
+
+  
+}
+.imgSection:hover img{
+opacity: 0.2;
+cursor: pointer;
+}
+#fileInput {
+  display: none; 
+}
+
+.skillbar{
+  background-color: #f48c13;
+  height: 16.5px;
+  border-radius: 2px;
+  max-width: 100%;
+}
+.skillBarParent{
+  width: 100%;
+  background-color: #ffffff;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+}
+.labelBetween{
+  position: absolute;
+  left: 53%;
+  line-height: 15.5px;
+}
+.skillLabel{
+margin-left: 100px;
+ 
+}
+.skillContainer{
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 6px 15px;
+}
+.ratingLabel{
+  margin: 0px 0px 2px 2px !important;
+  padding: 0px 0px 10px 50px;
+  font-weight: 500 !important;
+}
+@media screen and (max-width: 500px) {
+  .ratingLabel{
+    width: 50px;
+    font-size: 12px;
+    margin: 0px 0px 2px 2px !important;
+    padding: 0px 0px 10px 3px;
+    font-weight: 500 !important;
+}
+.headKillBar{
+  font-size: 12px;
+}
+.labelBetween{
+  left: 38%;
+}
+}

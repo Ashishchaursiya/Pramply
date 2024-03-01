@@ -1,0 +1,121 @@
+.sharingContainer{
+    display: flex;
+    margin-top: 2rem;
+}
+.vidoeTopHeaderMob{
+    display: none;
+}
+.vidoeTopHeaderWeb{
+    display: flex;
+}
+.SharedSc{
+    display: block;
+    /* margin-top: 3rem; */
+    width: 70%;
+}
+.communicationChatIcon{
+    width: 70%;
+}
+.nonCommunicationChatIcon{
+    width: 80%;
+}
+.IfNotSharedSc{
+    display: none;
+    margin-top: auto;
+    width: auto;
+}
+.twoVideoMain{
+    display: none;
+    margin-top: 3rem;
+    width: 30% !important;
+}
+.twoVideoOffMain{
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 0.25rem;
+}
+.IfNottwoVideoOffMain{
+    width: 100%;
+    height: 70vh;
+}
+.IfNottwoVideoMain{
+    display: flex;
+    margin-top: auto;
+    width: auto;
+}
+.featureBar{
+    width: 30rem;
+}
+.remoteShareVideo{
+    display: none;
+   
+}
+.remoteShareScreen{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.remoteShareScreen video{
+    object-fit: fill;
+    width: 82vw;
+    height: 76vh;
+}
+@media screen and (max-width: 600px) {
+    
+    .nonCommunicationChatIcon{
+        width: 71%;
+    }
+    .vidoeTopHeaderWeb{
+        display: none;
+    }
+    .vidoeTopHeaderMob{
+        display: flex;
+    }
+    .sharingContainer{
+        display: block;
+    }
+    .SharedSc{
+        
+        width: 100%;
+    }
+    .IfNottwoVideoMain{
+        display: block;
+        margin-top: 0rem;
+        height: 84vh;  
+    }
+    .IfNottwoVideoMain .not{
+        height: 49%;
+        margin-bottom: 0.3rem;
+        
+    }
+    .twoVideoMain{
+        margin-top: 4rem;
+        width: 100% !important;
+    }
+    .featureBar{
+        width: 100%;
+    }
+    .offVideoName{
+        /* width: 30rem; */
+        /* margin: 2rem; */
+    }
+    .youAreText{
+        font-size: 1rem !important;
+    }
+    .twoVideoOffMain{
+        
+        margin-bottom: 2rem;
+    }
+    .IfNottwoVideoOffMain{
+    height: 100%;
+    margin-bottom: 0.3rem;
+    }
+    .videos{
+        margin-bottom: 2rem;
+    }
+    .startSharingBtn{
+        display: none;
+    }
+    
+}

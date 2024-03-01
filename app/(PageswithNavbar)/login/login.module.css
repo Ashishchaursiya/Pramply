@@ -1,0 +1,36 @@
+.loginForm{
+    /* border: 3px solid   #2781ff; */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 30px 20px 35px 20px;
+    width: 30%;
+    margin: auto auto;
+}
+
+
+.loginForm label{
+    color:#000000 !important;
+    font-weight: 500 !important;
+}
+
+.loginForm h5{
+   font-size: 21px !important;
+    font-weight: 600 !important;
+}
+ 
+.loginFooter span{
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+    .loginForm{
+        width: 30rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .loginForm{
+        width: 100%;
+    }
+    
+}
